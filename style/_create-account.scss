@@ -1,0 +1,31 @@
+#create-account-body {
+    width: 100%;
+    top: 120px;
+    position: relative;
+
+    .container80 {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+
+
+    .create-body-details {
+        width: 70%;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        // height: 50vh;
+        padding-bottom: 50px;
+
+        .create-card-header {
+            padding: 5px 15px;
+            border-bottom: 1px solid #1c1f3f;
+
+        }
+    }
+}
