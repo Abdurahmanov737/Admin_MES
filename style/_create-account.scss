@@ -27,5 +27,44 @@
             border-bottom: 1px solid #1c1f3f;
 
         }
+
+        .create-card-body {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 15px;
+            form{
+                width: 60%;
+                text-align: center;
+            }
+
+            label {
+                display: block;
+                float: left;
+                text-align: left;
+                clear: left;
+            }
+
+            input {
+                display: block;
+                padding: 5px 15px;
+                margin: 10px 0;
+                width: 100%;
+                border: 1px solid #DECB25;
+                outline: none;
+                caret-color:#1c1f3f ;
+            }
+
+            button{
+                padding: 10px;
+                background-color: #1c1f3f;
+                border: none;
+                border-radius: 5px;
+                align-items: center;
+                color: white;
+                display: inline-block;
+
+            }
+        }
     }
 }

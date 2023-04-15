@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Report Details</title>
     <link rel="shortcut icon" href="img/emblem.png" type="image/x-icon">
 
     <link rel="stylesheet" href="vendors/bootstrap.css">
@@ -14,7 +14,7 @@
 
 <body>
 
-
+    <!-- HEADER starts here -->
     <header id="header-maine">
 
         <div class="header-log">
@@ -38,7 +38,14 @@
             <div id="round-inside">
 
                 <ul>
-                    <li><a href="profile.html"> Profile</a></li>
+                    <li>
+                        <a href="profile.html"> Profile</a>
+                    
+                    </li>
+
+                   
+
+
                     <li>
 
                         <form action=""></form>
@@ -50,50 +57,112 @@
         </div>
 
     </header>
-
-    <div id="report-inside">
-        <div id="sidebar-center">
-            <div class="sidebar-content">
-                <ul>
-                    <li class="sidebar-menu-item">
-                        <a href="index.html" class="side-a">
-
-                            Dashboard
-                        </a>
-
-                    </li>
+    <!-- HEADER ends here -->
 
 
-                    <li class="sidebar-menu-item">
-                        <a href="users.html" class="side-a ">
 
-                            Users
-                        </a>
-
-                    </li>
-
-                    <li class="sidebar-menu-item">
-                        <a href="" class="side-a">
-
-                            Announcements
-                        </a>
-
-                    </li>
+    <div id="details-body">
+        <div class="container80">
 
 
-                </ul>
+            <div id="details-card">
+                <div id="details-head">
+                    <!-- xxx should be replaced with the ID of the Report -->
+                    <!-- Datetime should be replaced with the real time of report submission -->
+                    <!-- The user who reported should be shown inside the last h3 element,
+                        name should be replaced with username and link to his profile
+                        details should be replaced accordingly -->
+                    <h3>Report № xxx</h3>
+                    <h3>Datetime</h3>
+
+                    <h3>
+                        <a href="#">Username</a> </h3>
+                </div>
+
+                <div id="details-card-body">
+
+                    <div class="repo-images">
+
+                        <div class="repo-images-head">
+                            <h3>Images</h3>
+                        </div>
+                        <img class="repo-img" src="img/Image_not_available.png" alt="">
+                        <img class="repo-img" src="img/Image_not_available.png" alt="">
+
+
+
+                    </div>
+
+
+                    <!-- video, written description and audio description of report is stored here -->
+                    <div class="repo-video-description">
+
+                        <div class="repo-video">
+                            <div class="repo-video-head">
+                                <h3>Video</h3>
+                            </div>
+                            <video width="400" height="400" controls>
+                                <source src="img/fire.mp4" type="video/mp4">
+
+                                Video not available
+                            </video>
+                        </div>
+
+                        <div class="repo-description">
+                            <div class="repo-description-head">
+                                <h3>Description</h3>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ullam, nam
+                                consequatur culpa asperiores nihil laborum aspernatur aut! Iure minima iusto
+                                consectetur, quidem culpa porro placeat nostrum eaque facilis impedit!
+                            </p>
+
+
+                            <div class="repo-audio">
+
+                                <div class="repo-audio-head">
+                                    <h3>Audio</h3>
+                                </div>
+                                <audio controls>
+                                    <source src="">
+                                </audio>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="repo-loc">
+
+                        <div class="repo-loc-head">
+                            <h3>Location</h3>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12155.094817867732!2d49.862877965600575!3d40.39170778725892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6ee857fa47%3A0x67993e393222e8e2!2sADA%20University!5e0!3m2!1sen!2saz!4v1681597039203!5m2!1sen!2saz"
+                            style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="repo-buttons">
+
+                        <button id="accepting">Accept</button>
+                        <button id="rejecting">Reject</button>
+                    </div>
+
+
+                </div>
+
+
+
+
             </div>
 
-        </div>
-
-
-        <div id="report-details">
-            <div id="details-inside">
-                <h2>Report</h2>
-            </div>
         </div>
     </div>
 
+
+    <script src="scripts/profile.js"></script>
 </body>
 
 </html>

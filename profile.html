@@ -59,26 +59,48 @@
         <div class="container80">
 
 
-            <div class="profile-body-card">
+            <div class="profile-left">
+                <div class="profile-body-card">
 
-                <div class="card-header">
-                    <h3>Profile Picture</h3>
-                </div>
-
-                <div class="card-body">
-                    <div class="body-picture">
-                        <img src="img/profile-unkown.jpg" alt="">
-
+                    <div class="card-header">
+                        <h3>Profile Picture</h3>
                     </div>
 
-                    <form action="">
-                        <input type="file" id="fileInput"></input>
-                        <button type="button" id="fileBtn">Upload new image</button>
-                        <br>
-                        <input type="submit" id="submitPic">
-                    </form>
+                    <div class="card-body">
+                        <div class="body-picture">
+                            <img src="img/profile-unkown.jpg" alt="">
+
+                        </div>
+
+                        <form action="">
+                            <input type="file" id="fileInput"></input>
+                            <button type="button" id="fileBtn">Upload new image</button>
+                            <br>
+                            <input type="submit" id="submitPic">
+                        </form>
+                    </div>
+
+
+
                 </div>
+
+
+                <!-- This part should be visible only is the person using website
+                    has admin priviliges(not MES Employee priviliges)
+                -->
+                <a href="create-account.html">
+
+                    <div class="profile-make-acc">
+
+                        <h3>Create Employee Account</h3>
+
+                    </div>
+                </a>
+
+                <!-- Till here -->
+
             </div>
+
 
 
             <div class="profile-body-details">
@@ -94,11 +116,11 @@
                         <input type="text" id="inputFirstname">
                         <label for="inputLastname">Lastname</label>
                         <input type="text" id="inputLastname">
-                        <label for="inputEmail">Email</label>
+                        <label for="inputEmail">Email Address</label>
                         <input type="text" id="inputEmail">
 
                         <label for="inputPassword">Password</label>
-                        <input type="text" id="inputPassword">
+                        <input type="password" id="inputPassword">
 
                         <button type="button">Submit Changes</button>
                     </form>
@@ -106,11 +128,11 @@
 
             </div>
 
-            
+
 
         </div>
 
-       
+
 
 
     </div>
